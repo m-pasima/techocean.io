@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M N Pasima's Projects</title>
+    <title>DevOps Tutorials</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -21,14 +21,16 @@
         nav {
             background-color: #003366;
             overflow: hidden;
+            text-align: center;
+            padding: 10px 0;
         }
         nav a {
-            float: left;
-            display: block;
+            display: inline-block;
             color: white;
             text-align: center;
             padding: 14px 20px;
             text-decoration: none;
+            font-size: 16px;
         }
         nav a:hover {
             background-color: #ddd;
@@ -38,6 +40,7 @@
             width: 80%;
             margin: auto;
             overflow: hidden;
+            padding: 20px 0;
         }
         .project {
             background-color: white;
@@ -64,40 +67,73 @@
         a:hover {
             text-decoration: underline;
         }
+        .section-title {
+            text-align: center;
+            margin: 40px 0 20px;
+        }
+        .section-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            min-width: 250px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>M N Pasima's Projects</h1>
+        <h1>DevOps Tutorials</h1>
     </header>
     <nav>
         <a href="index.html">Home</a>
-        <a href="project1.html">Project 1</a>
-        <a href="project2.html">Project 2</a>
-        <a href="project3.html">Project 3</a>
-        <a href="project4.html">Project 4</a>
-        <a href="project5.html">Project 5</a>
+        <a href="project1.html">Solution</a>
+        <a href="project2.html">Features</a>
+        <a href="project3.html">Integrations</a>
+        <a href="project4.html">Best Practices</a>
+        <a href="project5.html">Articles</a>
     </nav>
     <div class="container">
-        <div class="project">
-            <h2>Infrastructure Deployment Architecture</h2>
-            <p><a href="project1.html">View details</a></p>
+        <div class="section-title">
+            <h2>DevOps CI/CD Tutorials</h2>
+            <p>Continuous integration, delivery, and deployment (CI/CD) are foundational for successful DevOps practices.</p>
         </div>
-        <div class="project">
-            <h2>Secure User Access with OpenVPN</h2>
-            <p><a href="project2.html">View details</a></p>
-        </div>
-        <div class="project">
-            <h2>CI/CD Pipelines with GitHub Actions</h2>
-            <p><a href="project3.html">View details</a></p>
-        </div>
-        <div class="project">
-            <h2>Google Cloud Platform Deployment</h2>
-            <p><a href="project4.html">View details</a></p>
-        </div>
-        <div class="project">
-            <h2>Helm Chart Development</h2>
-            <p><a href="project5.html">View details</a></p>
+        <div class="section-content">
+            <div class="card">
+                <h3>JFrog and Jira Software</h3>
+                <p>Track progress of bugs and features in your software builds in Jira.</p>
+                <p><a href="project1.html">See tutorial</a></p>
+            </div>
+            <div class="card">
+                <h3>Integrate Harness Drone with Jira</h3>
+                <p>See runtime information regarding deployed tickets.</p>
+                <p><a href="project2.html">See tutorial</a></p>
+            </div>
+            <div class="card">
+                <h3>Enable GitLab deployments in Jira</h3>
+                <p>Manage and monitor your deployments with Jira and GitLab.</p>
+                <p><a href="project3.html">See tutorial</a></p>
+            </div>
+            <div class="card">
+                <h3>Continuous Integration Tutorial</h3>
+                <p>Learn the basics of continuous integration.</p>
+                <p><a href="project4.html">See tutorial</a></p>
+            </div>
+            <div class="card">
+                <h3>Continuous Delivery Tutorial</h3>
+                <p>Implement continuous delivery for faster releases.</p>
+                <p><a href="project5.html">See tutorial</a></p>
+            </div>
+            <div class="card">
+                <h3>Continuous Deployment Tutorial</h3>
+                <p>Automate your deployment process end-to-end.</p>
+                <p><a href="project6.html">See tutorial</a></p>
+            </div>
         </div>
     </div>
     <footer class="footer">
